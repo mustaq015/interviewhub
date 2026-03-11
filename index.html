@@ -1029,6 +1029,9 @@
         body.dark-mode .tag.active { background: #3B82F6; color: white; }
         body.dark-mode .question-card { background: #162032; border-color: #334155; }
         body.dark-mode .question-card:hover { border-color: #3B82F6; }
+        body.dark-mode .question-card [style*="background:#eff6ff"] { background: #1e3a5f !important; }
+        body.dark-mode .question-card [style*="background:#fef2f2"] { background: #3b1a1a !important; }
+        body.dark-mode #editQuestionModal .modal-content { background: #1e293b; color: #e2e8f0; }
         body.dark-mode .question-title { color: #e2e8f0; }
         body.dark-mode .question-tag { background: #273549; color: #94a3b8; }
         body.dark-mode .question-answer { border-top-color: #334155; }
@@ -1802,6 +1805,53 @@ Tips:
         </div>
     </div>
 
+    <!-- Edit Question Modal -->
+    <div class="modal" id="editQuestionModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>✏️ Edit Question</h2>
+                <button class="close-btn" onclick="closeModal('editQuestionModal')">×</button>
+            </div>
+            <form id="editQuestionForm" onsubmit="submitEditQuestion(event)">
+                <input type="hidden" id="editQuestionId">
+                <div class="form-group">
+                    <label>Question Title *</label>
+                    <input type="text" id="editQuestionTitle" required placeholder="e.g., Explain the difference between async and defer">
+                </div>
+                <div class="form-group">
+                    <label>Round *</label>
+                    <select id="editQuestionRound" required>
+                        <option value="Initial Screen">Initial Screen</option>
+                        <option value="Technical (Alg/DS)">Technical (Alg/DS)</option>
+                        <option value="Behavioral">Behavioral</option>
+                        <option value="Systems Design">Systems Design</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Tags (Press Enter to add)</label>
+                    <div class="tag-input-container" id="editTagInputContainer">
+                        <input type="text" class="tag-input-field" id="editTagInput" placeholder="Type and press Enter">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>Answer</label>
+                    <textarea id="editQuestionAnswer" placeholder="Write your answer here..."></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Code Example (Optional)</label>
+                    <textarea id="editQuestionCode" placeholder="// Paste code example here..." style="font-family: 'Space Mono', monospace;"></textarea>
+                </div>
+                <div class="modal-actions">
+                    <button type="button" class="btn-secondary" onclick="closeModal('editQuestionModal')">Cancel</button>
+                    <button type="submit" class="btn-primary">
+                        <span>💾</span>
+                        Save Changes
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- Add Note Topic Modal -->
     <div class="modal" id="addNoteModal">
         <div class="modal-content">
@@ -2489,13 +2539,23 @@ Tips:
             }
 
             questionsList.innerHTML = filteredQuestions.map(question => `
-                <div class="question-card" onclick="toggleQuestion(${question.id})">
-                    <div class="question-title">${question.title}</div>
-                    <div class="question-tags">
-                        ${question.tags.map(tag => `<span class="question-tag">${tag}</span>`).join('')}
+                <div class="question-card" id="qcard-${question.id}">
+                    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:0.75rem;">
+                        <div class="question-title" onclick="toggleQuestion(${question.id})" style="cursor:pointer;flex:1;">${escapeHtml(question.title)}</div>
+                        <div style="display:flex;gap:0.375rem;flex-shrink:0;">
+                            <button onclick="event.stopPropagation();editQuestion(${question.id})"
+                                style="border:none;background:#eff6ff;color:#3B82F6;padding:0.3rem 0.6rem;border-radius:6px;cursor:pointer;font-size:0.75rem;font-weight:600;transition:all 0.2s;"
+                                onmouseover="this.style.background='#dbeafe'" onmouseout="this.style.background='#eff6ff'" title="Edit question">✏️ Edit</button>
+                            <button onclick="event.stopPropagation();deleteQuestion(${question.id})"
+                                style="border:none;background:#fef2f2;color:#ef4444;padding:0.3rem 0.6rem;border-radius:6px;cursor:pointer;font-size:0.75rem;font-weight:600;transition:all 0.2s;"
+                                onmouseover="this.style.background='#fee2e2'" onmouseout="this.style.background='#fef2f2'" title="Delete question">🗑️</button>
+                        </div>
                     </div>
-                    <div class="question-meta">
-                        <span>📋 ${question.round}</span>
+                    <div class="question-tags" onclick="toggleQuestion(${question.id})" style="cursor:pointer;">
+                        ${question.tags.map(tag => `<span class="question-tag">${escapeHtml(tag)}</span>`).join('')}
+                    </div>
+                    <div class="question-meta" onclick="toggleQuestion(${question.id})" style="cursor:pointer;">
+                        <span>📋 ${escapeHtml(question.round)}</span>
                     </div>
                     <div class="question-answer" id="answer-${question.id}">
                         <div class="answer-section">
@@ -3176,6 +3236,101 @@ Tips:
             renderQuestions();
             closeModal('addQuestionModal');
         }
+
+        function editQuestion(questionId) {
+            if (!currentCompany) return;
+            const question = currentCompany.questions.find(q => q.id === questionId);
+            if (!question) return;
+
+            // Pre-fill form
+            document.getElementById('editQuestionId').value = question.id;
+            document.getElementById('editQuestionTitle').value = question.title;
+            document.getElementById('editQuestionRound').value = question.round;
+            document.getElementById('editQuestionAnswer').value = question.answer;
+            document.getElementById('editQuestionCode').value = question.code || '';
+
+            // Load tags into edit tag container
+            currentEditQuestionTags = [...question.tags];
+            renderEditQuestionTags();
+
+            openModal('editQuestionModal');
+        }
+
+        function submitEditQuestion(event) {
+            event.preventDefault();
+            if (!currentCompany) return;
+
+            const id = parseInt(document.getElementById('editQuestionId').value);
+            const question = currentCompany.questions.find(q => q.id === id);
+            if (!question) return;
+
+            question.title  = document.getElementById('editQuestionTitle').value.trim();
+            question.round  = document.getElementById('editQuestionRound').value;
+            question.answer = document.getElementById('editQuestionAnswer').value.trim();
+            question.code   = document.getElementById('editQuestionCode').value.trim();
+            question.tags   = [...currentEditQuestionTags];
+
+            updateCompanyTimestamp(currentCompany.id);
+            renderQuestions();
+            closeModal('editQuestionModal');
+
+            // Re-expand if it was open
+            setTimeout(() => {
+                const el = document.getElementById('answer-' + id);
+                if (el) el.classList.add('expanded');
+            }, 50);
+        }
+
+        function deleteQuestion(questionId) {
+            if (!currentCompany) return;
+            const question = currentCompany.questions.find(q => q.id === questionId);
+            if (!question) return;
+            if (!confirm(`Delete question?\n\n"${question.title}"\n\nThis cannot be undone.`)) return;
+            currentCompany.questions = currentCompany.questions.filter(q => q.id !== questionId);
+            updateCompanyTimestamp(currentCompany.id);
+            renderQuestions();
+        }
+
+        // Tag management for edit modal
+        let currentEditQuestionTags = [];
+
+        function renderEditQuestionTags() {
+            const container = document.getElementById('editTagInputContainer');
+            if (!container) return;
+            // Remove existing tag spans
+            container.querySelectorAll('.question-tag-pill').forEach(el => el.remove());
+            const input = document.getElementById('editTagInput');
+            currentEditQuestionTags.forEach(tag => {
+                const span = document.createElement('span');
+                span.className = 'question-tag-pill';
+                span.style.cssText = 'display:inline-flex;align-items:center;gap:0.25rem;background:#eff6ff;color:#3B82F6;padding:0.2rem 0.6rem;border-radius:12px;font-size:0.78rem;font-weight:600;margin:0.15rem;';
+                span.innerHTML = `${escapeHtml(tag)} <span onclick="removeEditTag('${escapeHtml(tag)}')" style="cursor:pointer;font-size:1rem;line-height:1;color:#94a3b8;" onmouseover="this.style.color='#ef4444'" onmouseout="this.style.color='#94a3b8'">×</span>`;
+                container.insertBefore(span, input);
+            });
+        }
+
+        function removeEditTag(tag) {
+            currentEditQuestionTags = currentEditQuestionTags.filter(t => t !== tag);
+            renderEditQuestionTags();
+        }
+
+        // Wire up edit tag input Enter key
+        document.addEventListener('DOMContentLoaded', () => {
+            const editTagInput = document.getElementById('editTagInput');
+            if (editTagInput) {
+                editTagInput.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter') {
+                        e.preventDefault();
+                        const val = editTagInput.value.trim();
+                        if (val && !currentEditQuestionTags.includes(val)) {
+                            currentEditQuestionTags.push(val);
+                            renderEditQuestionTags();
+                        }
+                        editTagInput.value = '';
+                    }
+                });
+            }
+        });
 
         // Delete Company
         function deleteCompany(companyId) {
