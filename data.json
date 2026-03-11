@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:50:25.582Z",
+  "lastUpdated": "2026-03-11T07:50:39.514Z",
   "companies": [
     {
       "id": 1,
@@ -201,6 +201,12 @@
     {
       "id": 11,
       "text": "Test your camera, mic, internet connection",
+      "done": false,
+      "cat": "Logistics"
+    },
+    {
+      "id": 12,
+      "text": "Get a good night's sleep before interview",
       "done": false,
       "cat": "Logistics"
     }
