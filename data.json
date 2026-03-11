@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T15:10:38.069Z",
+  "lastUpdated": "2026-03-11T15:11:48.081Z",
   "companies": [
     {
       "id": 1,
@@ -119,7 +119,7 @@
       "id": 1,
       "title": "Golden Interview Questionaire",
       "category": "OTHER",
-      "url": "./files/Golden Questionnaire with Interview Qs-1-76.md",
+      "url": "https://raw.githubusercontent.com/mustaq015/interviewhub/main/Golden Questionnaire with Interview Qs-1-76.md",
       "important": false,
       "added": "3/11/2026"
     }
