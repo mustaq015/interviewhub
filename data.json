@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:39:40.945Z",
+  "lastUpdated": "2026-03-11T07:47:43.511Z",
   "companies": [
     {
       "id": 1,
@@ -137,6 +137,13 @@
     "topics": {}
   },
   "notebooks": [],
-  "checklist": [],
+  "checklist": [
+    {
+      "id": 1,
+      "text": "Research the company, products and recent news",
+      "done": false,
+      "cat": "Prep"
+    }
+  ],
   "flashcards": []
 }
