@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:50:10.508Z",
+  "lastUpdated": "2026-03-11T07:50:25.582Z",
   "companies": [
     {
       "id": 1,
@@ -197,6 +197,12 @@
       "text": "Practice explaining SCD Type 2",
       "done": false,
       "cat": "Technical"
+    },
+    {
+      "id": 11,
+      "text": "Test your camera, mic, internet connection",
+      "done": false,
+      "cat": "Logistics"
     }
   ],
   "flashcards": []
