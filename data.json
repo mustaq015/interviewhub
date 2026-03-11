@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:49:42.507Z",
+  "lastUpdated": "2026-03-11T07:49:56.514Z",
   "companies": [
     {
       "id": 1,
@@ -183,6 +183,12 @@
     {
       "id": 8,
       "text": "Practice Data Warehouse / DWH concepts and schema types",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 9,
+      "text": "Review your project architecture and challenges faced",
       "done": false,
       "cat": "Technical"
     }
