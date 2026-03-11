@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:48:35.506Z",
+  "lastUpdated": "2026-03-11T07:48:50.892Z",
   "companies": [
     {
       "id": 1,
@@ -159,6 +159,12 @@
     {
       "id": 4,
       "text": "Prepare 2-min self introduction",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 5,
+      "text": "Prepare questions to ask the interviewer",
       "done": false,
       "cat": "Prep"
     }
