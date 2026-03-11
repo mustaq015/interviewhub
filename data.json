@@ -1,14 +1,14 @@
 {
   "version": "2.0",
-  "lastUpdated": "",
+  "lastUpdated": "2026-03-11T07:11:05.090Z",
   "companies": [
     {
       "id": 1,
-      "name": "Google",
-      "icon": "🔍",
+      "name": "Capgemini",
+      "icon": "CG",
       "gradient": "linear-gradient(135deg, #4285F4 0%, #34A853 100%)",
       "rounds": 5,
-      "updated": "15 days ago",
+      "updated": "Just now",
       "notes": [
         {
           "id": 1,
@@ -20,136 +20,210 @@
         {
           "id": 1,
           "title": "Describe how a hash table works?",
-          "tags": ["Data Structures", "Algorithms", "JavaScript", "Python"],
+          "tags": [
+            "Data Structures",
+            "Algorithms",
+            "JavaScript",
+            "Python"
+          ],
           "round": "Technical (Alg/DS)",
-          "answer": "A hash table works by converting a key into an index using a hash function.",
-          "code": ""
+          "answer": "A hash table works by converting a key into an index using a hash function. Here's how it operates:\n\n1. **Hash Function**: Takes a key and converts it to an array index\n2. **Collision Handling**: Deals with multiple keys mapping to the same index\n3. **Operations**: O(1) average time complexity for insert, delete, and lookup operations",
+          "code": "class HashTable {\n  constructor() {\n    this.table = new Array(127);\n    this.size = 0;\n  }\n  \n  _hash(key) {\n    let hash = 0;\n    for (let i = 0; i < key.length; i++) {\n      hash += key.charCodeAt(i);\n    }\n    return hash % this.table.length;\n  }\n  \n  set(key, value) {\n    const index = this._hash(key);\n    this.table[index] = [key, value];\n    this.size++;\n  }\n  \n  get(key) {\n    const index = this._hash(key);\n    return this.table[index];\n  }\n}"
         }
-      ]
+      ],
+      "interviewDate": null
     },
-    { "id": 2, "name": "Stripe",    "icon": "💳", "gradient": "linear-gradient(135deg, #635BFF 0%, #4F46E5 100%)", "rounds": 5, "updated": "17 days ago", "notes": [], "questions": [] },
-    { "id": 3, "name": "Microsoft", "icon": "🪟", "gradient": "linear-gradient(135deg, #00A4EF 0%, #0078D4 100%)", "rounds": 5, "updated": "17 days ago", "notes": [], "questions": [] },
-    { "id": 4, "name": "Netflix",   "icon": "🎬", "gradient": "linear-gradient(135deg, #E50914 0%, #B20710 100%)", "rounds": 5, "updated": "17 days ago", "notes": [], "questions": [] },
-    { "id": 5, "name": "Startup",   "icon": "🚀", "gradient": "linear-gradient(135deg, #10B981 0%, #059669 100%)", "rounds": 2, "updated": "23 mins ago",  "notes": [], "questions": [] },
-    { "id": 6, "name": "Startups",  "icon": "🌟", "gradient": "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)", "rounds": 3, "updated": "17 days ago", "notes": [], "questions": [] },
-    { "id": 7, "name": "Mimidin",   "icon": "🎯", "gradient": "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)", "rounds": 2, "updated": "17 hours ago", "notes": [], "questions": [] },
-    { "id": 8, "name": "Framework", "icon": "⚡", "gradient": "linear-gradient(135deg, #F97316 0%, #EA580C 100%)", "rounds": 5, "updated": "15 minutes ago", "notes": [], "questions": [] },
-    { "id": 9, "name": "Virat",     "icon": "🏏", "gradient": "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)", "rounds": 3, "updated": "4 days ago",  "notes": [], "questions": [] }
+    {
+      "id": 2,
+      "name": "CoForge",
+      "icon": "CF",
+      "gradient": "linear-gradient(135deg, #635BFF 0%, #4F46E5 100%)",
+      "rounds": 5,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 3,
+      "name": "Cognizant",
+      "icon": "CZ",
+      "gradient": "linear-gradient(135deg, #00A4EF 0%, #0078D4 100%)",
+      "rounds": 5,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 4,
+      "name": "EY",
+      "icon": "EY",
+      "gradient": "linear-gradient(135deg, #E50914 0%, #B20710 100%)",
+      "rounds": 5,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 5,
+      "name": "Accenture",
+      "icon": "AC",
+      "gradient": "linear-gradient(135deg, #10B981 0%, #059669 100%)",
+      "rounds": 2,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 6,
+      "name": "UST Global",
+      "icon": "UG",
+      "gradient": "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)",
+      "rounds": 3,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 7,
+      "name": "Wipro",
+      "icon": "WP",
+      "gradient": "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
+      "rounds": 2,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 8,
+      "name": "CGI",
+      "icon": "CG",
+      "gradient": "linear-gradient(135deg, #F97316 0%, #EA580C 100%)",
+      "rounds": 5,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    },
+    {
+      "id": 9,
+      "name": "Infosys",
+      "icon": "IN",
+      "gradient": "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)",
+      "rounds": 3,
+      "updated": "Just now",
+      "notes": [],
+      "questions": [],
+      "interviewDate": null
+    }
   ],
-  "resources": [
-    { "id": 1,  "title": "Self Introduction",                           "url": "Self Introduction.pdf",                                    "category": "SELF",           "important": false },
-    { "id": 2,  "title": "Project Architecture",                        "url": "Project architecture.pdf",                                 "category": "SELF",           "important": false },
-    { "id": 3,  "title": "Bug Life Cycle",                              "url": "bug life cycle.pdf",                                       "category": "SELF",           "important": false },
-    { "id": 4,  "title": "SCD Type 2",                                  "url": "SCD2 Type.pdf",                                            "category": "SELF",           "important": false },
-    { "id": 5,  "title": "Resume",                                      "url": "project/NIKHIL CV.pdf",                                    "category": "SELF",           "important": false },
-    { "id": 6,  "title": "Data Warehouse",                              "url": "Data Warehouse.pdf",                                       "category": "DWH",            "important": false },
-    { "id": 7,  "title": "Normalization",                               "url": "Normalization.pdf",                                        "category": "DWH",            "important": false },
-    { "id": 8,  "title": "Dimension & Fact Table",                      "url": "Dimension Table and Fact table.pdf",                       "category": "DWH",            "important": false },
-    { "id": 9,  "title": "Schema",                                      "url": "Schema.pdf",                                               "category": "DWH",            "important": false },
-    { "id": 10, "title": "Challenges in DWH",                           "url": "ETL/Challenges in DWH.pdf",                                "category": "DWH",            "important": false },
-    { "id": 11, "title": "SQL DDL",                                     "url": "SQL DDL.pdf",                                              "category": "SQL",            "important": false },
-    { "id": 12, "title": "DML",                                         "url": "DML.pdf",                                                  "category": "SQL",            "important": false },
-    { "id": 13, "title": "NULL Functions",                              "url": "NULL FUNCTIONS.pdf",                                       "category": "SQL",            "important": true  },
-    { "id": 14, "title": "Execution & Compilation & Logical Operators", "url": "excution & compilation &logical Operators.pdf",            "category": "SQL",            "important": false },
-    { "id": 15, "title": "SET Operators",                               "url": "SET OPERATORS.pdf",                                        "category": "SQL",            "important": true  },
-    { "id": 16, "title": "Aggregate Functions",                         "url": "AGGREGATE FUNCTIONS.pdf",                                  "category": "SQL",            "important": true  },
-    { "id": 17, "title": "Analytical Functions/Windows Functions",      "url": "Analytical Function or Windows Functions.pdf",             "category": "SQL",            "important": true  },
-    { "id": 18, "title": "Joins",                                       "url": "Join.pdf",                                                 "category": "SQL",            "important": true  },
-    { "id": 19, "title": "Constraints & Like Operators",                "url": "Constraints & like operators.pdf",                         "category": "SQL",            "important": true  },
-    { "id": 20, "title": "Sub Query",                                   "url": "ETL/Sub Query.pdf",                                        "category": "SQL",            "important": true  },
-    { "id": 21, "title": "ETL Intro",                                   "url": "ETL Intro.pdf",                                            "category": "ETL",            "important": false },
-    { "id": 22, "title": "Informatica Workflow and Monitor",            "url": "ETL/workflow & monitor.pdf",                               "category": "ETL",            "important": true  },
-    { "id": 23, "title": "Data Completeness Test",                      "url": "ETL/Data completeness test.pdf",                           "category": "ETL",            "important": true  },
-    { "id": 24, "title": "STM Document",                                "url": "ETL/STM document.pdf",                                     "category": "ETL",            "important": false },
-    { "id": 25, "title": "Rules for Testcase",                          "url": "ETL/rules to create testcase.pdf",                         "category": "ETL",            "important": true  },
-    { "id": 26, "title": "Data Transformation Test",                    "url": "ETL/Data transformation Test.pdf",                         "category": "ETL",            "important": true  },
-    { "id": 27, "title": "Test Scenario for Initial and Incremental Load", "url": "ETL/test scenario for initial and incremental.pdf",    "category": "ETL",            "important": false },
-    { "id": 28, "title": "Checking Duplicate in Target Table",          "url": "ETL/checking duplicate in target table.pdf",               "category": "ETL",            "important": false },
-    { "id": 29, "title": "Source & Record Count",                       "url": "ETL/source and record count.pdf",                          "category": "ETL",            "important": false },
-    { "id": 30, "title": "Aggregate Transformation",                    "url": "ETL/aggregator tansformation.pdf",                         "category": "TRANSFORMATION", "important": true  },
-    { "id": 31, "title": "Filter Transformation",                       "url": "ETL/filter Transformation.pdf",                            "category": "TRANSFORMATION", "important": true  },
-    { "id": 32, "title": "Expression Transformation",                   "url": "ETL/expression transformation.pdf",                        "category": "TRANSFORMATION", "important": true  },
-    { "id": 33, "title": "Router Transformation",                       "url": "ETL/Router Transformation.pdf",                            "category": "TRANSFORMATION", "important": true  },
-    { "id": 34, "title": "Active & Passive Transformation",             "url": "ETL/active and passive transformation.pdf",                "category": "TRANSFORMATION", "important": true  },
-    { "id": 35, "title": "Sorter Transformation",                       "url": "ETL/sorter transformation.pdf",                            "category": "TRANSFORMATION", "important": true  },
-    { "id": 36, "title": "Joiner Transformation",                       "url": "ETL/joiner transformation.pdf",                            "category": "TRANSFORMATION", "important": true  },
-    { "id": 37, "title": "Lookup Transformation",                       "url": "ETL/lookup transformation.pdf",                            "category": "TRANSFORMATION", "important": true  },
-    { "id": 38, "title": "All Differences",                             "url": "all differences.pdf",                                      "category": "OTHER",          "important": true  },
-    { "id": 39, "title": "Index",                                       "url": "ETL/Index.pdf",                                            "category": "OTHER",          "important": false },
-    { "id": 40, "title": "Views",                                       "url": "ETL/view.pdf",                                             "category": "OTHER",          "important": false },
-    { "id": 41, "title": "TOAD",                                        "url": "ETL/Toad.pdf",                                             "category": "OTHER",          "important": false },
-    { "id": 42, "title": "Agile",                                       "url": "manual/Agile.pdf",                                         "category": "MANUAL",         "important": false },
-    { "id": 43, "title": "Agile Sir Notes",                             "url": "manual/Agile1.pdf",                                        "category": "MANUAL",         "important": false },
-    { "id": 44, "title": "Types of Documents",                          "url": "manual/types of documents.pdf",                            "category": "MANUAL",         "important": false },
-    { "id": 45, "title": "Levels of Testing",                           "url": "manual/levels of testing.pdf",                             "category": "MANUAL",         "important": false },
-    { "id": 46, "title": "STLC",                                        "url": "manual/STLC.pdf",                                          "category": "MANUAL",         "important": false },
-    { "id": 47, "title": "Test Methodology & Traceability Matrix",      "url": "manual/test methodology.pdf",                              "category": "MANUAL",         "important": true  },
-    { "id": 48, "title": "Priority & Severity",                         "url": "manual/priority and severity.png",                         "category": "MANUAL",         "important": false },
-    { "id": 49, "title": "STLC Test Plan",                              "url": "manual/STLC Test Plan.png",                                "category": "MANUAL",         "important": false },
-    { "id": 50, "title": "Test Case Template",                          "url": "manual/test case template.png",                            "category": "MANUAL",         "important": true  },
-    { "id": 51, "title": "RTM Document",                                "url": "manual/RTM.png",                                           "category": "MANUAL",         "important": false },
-    { "id": 52, "title": "SQL Query Practice",                          "url": "QUERY/query.pdf",                                          "category": "OTHER",          "important": false },
-    { "id": 53, "title": "ETL Project",                                 "url": "project/ETL project.pdf",                                  "category": "ETL",            "important": true  },
-    { "id": 54, "title": "HP ALM Dashboard",                            "url": "https://www.guru99.com/hp-alm-dashboard.html",             "category": "MANUAL",         "important": false },
-    { "id": 55, "title": "JIRA Tutorial",                               "url": "https://www.guru99.com/jira-interview-questions.html",     "category": "MANUAL",         "important": false },
-    { "id": 56, "title": "ETL Challenges Faced",                        "url": "https://www.tutorialspoint.com/etl_testing/etl_testing_challenges.htm", "category": "ETL", "important": false },
-    { "id": 57, "title": "Types of Bugs in ETL",                        "url": "https://www.pavantestingtools.com/2014/08/types-of-etl-bugs.html", "category": "ETL", "important": false },
-    { "id": 58, "title": "JIRA Board",                                  "url": "manual/JIRA BOARD.webp",                                   "category": "MANUAL",         "important": false }
-  ],
+  "resources": [],
   "globalNotes": {
     "categories": [
-      { "id": 1, "name": "SQL Notes",      "color": "#3B82F6", "icon": "🗄️" },
-      { "id": 2, "name": "ETL Notes",      "color": "#10B981", "icon": "🔄" },
-      { "id": 3, "name": "DWH Concepts",   "color": "#8B5CF6", "icon": "🏗️" },
-      { "id": 4, "name": "Interview Tips", "color": "#F59E0B", "icon": "💡" }
+      {
+        "id": 1,
+        "name": "General Notes",
+        "color": "#3B82F6"
+      },
+      {
+        "id": 2,
+        "name": "Common Patterns",
+        "color": "#10B981"
+      },
+      {
+        "id": 3,
+        "name": "Resources",
+        "color": "#F59E0B"
+      }
     ],
     "content": {},
-    "topics": {
-      "1": [],
-      "2": [],
-      "3": [],
-      "4": []
-    }
+    "topics": {}
   },
-  "notebooks": [
-    { "id": 1,  "title": "Python Basics", "url": "https://colab.research.google.com/drive/1_UAr3eLjGwA2_zAFOplCnJrr84qL_MoM", "tag": "Python",  "icon": "🐍" },
-    { "id": 2,  "title": "Pandas",        "url": "notebooks/pandas.ipynb",        "tag": "Python",  "icon": "🐼" },
-    { "id": 3,  "title": "NumPy",         "url": "notebooks/numpy.ipynb",         "tag": "Python",  "icon": "🔢" },
-    { "id": 4,  "title": "PySpark",       "url": "notebooks/pyspark.ipynb",       "tag": "PySpark", "icon": "⚡" },
-    { "id": 5,  "title": "SQL Practice",  "url": "notebooks/sql.ipynb",           "tag": "SQL",     "icon": "🗄️" },
-    { "id": 6,  "title": "ETL Pipeline",  "url": "notebooks/etl_pipeline.ipynb",  "tag": "ETL",     "icon": "🔄" },
-    { "id": 7,  "title": "AWS Glue",      "url": "notebooks/aws_glue.ipynb",      "tag": "AWS",     "icon": "☁️" },
-    { "id": 8,  "title": "Airflow",       "url": "notebooks/airflow.ipynb",       "tag": "ETL",     "icon": "💨" },
-    { "id": 9,  "title": "Data Modeling", "url": "notebooks/data_modeling.ipynb", "tag": "DWH",     "icon": "📐" },
-    { "id": 10, "title": "System Design", "url": "notebooks/system_design.ipynb", "tag": "Design",  "icon": "🏗️" }
-  ],
+  "notebooks": [],
   "checklist": [
-    { "id": 1,  "text": "Research the company, products and recent news",            "done": false, "cat": "Prep"      },
-    { "id": 2,  "text": "Review JD and map your experience to requirements",         "done": false, "cat": "Prep"      },
-    { "id": 3,  "text": "Prepare STAR stories for behavioral questions",             "done": false, "cat": "Prep"      },
-    { "id": 4,  "text": "Prepare 2-min self introduction",                          "done": false, "cat": "Prep"      },
-    { "id": 5,  "text": "Prepare questions to ask the interviewer",                 "done": false, "cat": "Prep"      },
-    { "id": 6,  "text": "Revise SQL: joins, window functions, aggregates, subqueries","done": false, "cat": "Technical" },
-    { "id": 7,  "text": "Revise ETL concepts, transformations, and tools",          "done": false, "cat": "Technical" },
-    { "id": 8,  "text": "Practice Data Warehouse / DWH concepts and schema types",  "done": false, "cat": "Technical" },
-    { "id": 9,  "text": "Review your project architecture and challenges faced",     "done": false, "cat": "Technical" },
-    { "id": 10, "text": "Practice explaining SCD Type 2",                           "done": false, "cat": "Technical" },
-    { "id": 11, "text": "Test your camera, mic, internet connection",               "done": false, "cat": "Logistics" },
-    { "id": 12, "text": "Get a good night's sleep before interview",                "done": false, "cat": "Logistics" },
-    { "id": 13, "text": "Keep resume and portfolio link ready",                     "done": false, "cat": "Logistics" }
+    {
+      "id": 1,
+      "text": "Research the company, products and recent news",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 2,
+      "text": "Review JD and map your experience to requirements",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 3,
+      "text": "Prepare STAR stories for behavioral questions",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 4,
+      "text": "Prepare 2-min self introduction",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 5,
+      "text": "Prepare questions to ask the interviewer",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 6,
+      "text": "Revise SQL: joins, window functions, aggregates, subqueries",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 7,
+      "text": "Revise ETL concepts, transformations, and tools",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 8,
+      "text": "Practice Data Warehouse / DWH concepts and schema types",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 9,
+      "text": "Review your project architecture and challenges faced",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 10,
+      "text": "Practice explaining SCD Type 2",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 11,
+      "text": "Test your camera, mic, internet connection",
+      "done": false,
+      "cat": "Logistics"
+    },
+    {
+      "id": 12,
+      "text": "Get a good night's sleep before interview",
+      "done": false,
+      "cat": "Logistics"
+    },
+    {
+      "id": 13,
+      "text": "Keep resume and portfolio link ready",
+      "done": false,
+      "cat": "Logistics"
+    }
   ],
-  "flashcards": [
-    { "id": 1,  "q": "What is SCD Type 2?",                               "a": "Tracks historical changes by inserting new rows with effective/expiry dates and a current_flag, preserving full history of dimension changes." },
-    { "id": 2,  "q": "RANK() vs DENSE_RANK()?",                           "a": "RANK() leaves gaps after ties (1,2,2,4). DENSE_RANK() does not leave gaps (1,2,2,3). ROW_NUMBER() is always unique." },
-    { "id": 3,  "q": "What is a Fact table?",                             "a": "Stores quantitative measures/metrics (e.g. sales amount, quantity). References dimension tables via foreign keys. Can be additive, semi-additive, or non-additive." },
-    { "id": 4,  "q": "Star Schema vs Snowflake Schema?",                  "a": "Star: one fact + denormalized dimension tables — fast queries, simple joins. Snowflake: normalized dimensions — saves storage, more complex joins." },
-    { "id": 5,  "q": "What is ETL?",                                      "a": "Extract (pull data from sources), Transform (clean, validate, aggregate, apply business rules), Load (write into data warehouse). ELT loads first, then transforms inside the warehouse." },
-    { "id": 6,  "q": "What is a Surrogate Key?",                          "a": "An artificial primary key (usually auto-incremented integer) assigned independently of business/natural keys. Used in DWH to handle SCD and source-system changes." },
-    { "id": 7,  "q": "UNION vs UNION ALL?",                               "a": "UNION removes duplicates and sorts the result (slower). UNION ALL keeps all rows including duplicates (faster). Always prefer UNION ALL when duplicates are not a concern." },
-    { "id": 8,  "q": "What is a Window Function?",                        "a": "Performs calculation across a related set of rows without collapsing them. Syntax: FUNCTION() OVER (PARTITION BY col ORDER BY col ROWS/RANGE ...). Examples: ROW_NUMBER, RANK, SUM, LAG, LEAD." },
-    { "id": 9,  "q": "Active vs Passive Transformation (Informatica)?",   "a": "Active: changes number of rows (Filter, Aggregator, Router, Joiner, Sorter, Normalizer). Passive: does not change row count (Expression, Lookup, Sequence Generator, Update Strategy)." },
-    { "id": 10, "q": "What is Normalization?",                            "a": "Organizing DB to reduce redundancy. 1NF: atomic values, no repeating groups. 2NF: no partial dependency. 3NF: no transitive dependency. BCNF: every determinant is a candidate key." },
-    { "id": 11, "q": "What are the types of Slowly Changing Dimensions?", "a": "SCD0: no change. SCD1: overwrite old value. SCD2: add new row with date range. SCD3: add new column for old value. SCD4: use mini-dimension. SCD6: hybrid of 1+2+3." },
-    { "id": 12, "q": "What is Data Completeness Testing in ETL?",         "a": "Verifying that all expected records from source arrived in target. Includes record count checks, null checks, duplicate checks, and boundary value validation." }
-  ]
+  "flashcards": []
 }
