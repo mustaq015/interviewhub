@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:47:59.853Z",
+  "lastUpdated": "2026-03-11T07:48:19.332Z",
   "companies": [
     {
       "id": 1,
@@ -147,6 +147,12 @@
     {
       "id": 2,
       "text": "Review JD and map your experience to requirements",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 3,
+      "text": "Prepare STAR stories for behavioral questions",
       "done": false,
       "cat": "Prep"
     }
