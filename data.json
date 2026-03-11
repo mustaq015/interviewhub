@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T16:40:29.181Z",
+  "lastUpdated": "2026-03-11T16:41:20.490Z",
   "companies": [
     {
       "id": 1,
@@ -39,9 +39,18 @@
       "icon": "💳",
       "gradient": "linear-gradient(135deg, #635BFF 0%, #4F46E5 100%)",
       "rounds": 5,
-      "updated": "17 days ago",
+      "updated": "Just now",
       "notes": [],
-      "questions": []
+      "questions": [
+        {
+          "id": 1,
+          "title": "what is etl",
+          "round": "Technical (Alg/DS)",
+          "tags": [],
+          "answer": "",
+          "code": ""
+        }
+      ]
     },
     {
       "id": 3,
