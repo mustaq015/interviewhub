@@ -1,14 +1,14 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:35:22.823Z",
+  "lastUpdated": "2026-03-11T07:36:13.214Z",
   "companies": [
     {
       "id": 1,
-      "name": "Google",
-      "icon": "🔍",
+      "name": "Capgemini",
+      "icon": "CG",
       "gradient": "linear-gradient(135deg, #4285F4 0%, #34A853 100%)",
       "rounds": 5,
-      "updated": "15 days ago",
+      "updated": "Just now",
       "notes": [
         {
           "id": 1,
@@ -30,7 +30,8 @@
           "answer": "A hash table works by converting a key into an index using a hash function. Here's how it operates:\n\n1. **Hash Function**: Takes a key and converts it to an array index\n2. **Collision Handling**: Deals with multiple keys mapping to the same index\n3. **Operations**: O(1) average time complexity for insert, delete, and lookup operations",
           "code": "class HashTable {\n  constructor() {\n    this.table = new Array(127);\n    this.size = 0;\n  }\n  \n  _hash(key) {\n    let hash = 0;\n    for (let i = 0; i < key.length; i++) {\n      hash += key.charCodeAt(i);\n    }\n    return hash % this.table.length;\n  }\n  \n  set(key, value) {\n    const index = this._hash(key);\n    this.table[index] = [key, value];\n    this.size++;\n  }\n  \n  get(key) {\n    const index = this._hash(key);\n    return this.table[index];\n  }\n}"
         }
-      ]
+      ],
+      "interviewDate": null
     },
     {
       "id": 2,
