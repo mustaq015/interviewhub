@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:50:39.514Z",
+  "lastUpdated": "2026-03-11T07:50:51.395Z",
   "companies": [
     {
       "id": 1,
@@ -207,6 +207,12 @@
     {
       "id": 12,
       "text": "Get a good night's sleep before interview",
+      "done": false,
+      "cat": "Logistics"
+    },
+    {
+      "id": 13,
+      "text": "Keep resume and portfolio link ready",
       "done": false,
       "cat": "Logistics"
     }
