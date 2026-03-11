@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:18:35.440Z",
+  "lastUpdated": "2026-03-11T07:19:18.589Z",
   "companies": [
     {
       "id": 1,
@@ -35,13 +35,14 @@
     },
     {
       "id": 2,
-      "name": "Stripe",
-      "icon": "💳",
+      "name": "EY",
+      "icon": "EY",
       "gradient": "linear-gradient(135deg, #635BFF 0%, #4F46E5 100%)",
       "rounds": 5,
-      "updated": "17 days ago",
+      "updated": "Just now",
       "notes": [],
-      "questions": []
+      "questions": [],
+      "interviewDate": null
     },
     {
       "id": 3,
