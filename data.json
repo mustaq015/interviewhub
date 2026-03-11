@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:47:43.511Z",
+  "lastUpdated": "2026-03-11T07:47:59.853Z",
   "companies": [
     {
       "id": 1,
@@ -141,6 +141,12 @@
     {
       "id": 1,
       "text": "Research the company, products and recent news",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 2,
+      "text": "Review JD and map your experience to requirements",
       "done": false,
       "cat": "Prep"
     }
