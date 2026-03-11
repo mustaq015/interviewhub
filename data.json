@@ -1,14 +1,14 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:19:57.502Z",
+  "lastUpdated": "2026-03-11T07:20:52.305Z",
   "companies": [
     {
       "id": 1,
-      "name": "Capgemini",
-      "icon": "CG",
+      "name": "Google",
+      "icon": "🔍",
       "gradient": "linear-gradient(135deg, #4285F4 0%, #34A853 100%)",
       "rounds": 5,
-      "updated": "Just now",
+      "updated": "15 days ago",
       "notes": [
         {
           "id": 1,
@@ -30,96 +30,87 @@
           "answer": "A hash table works by converting a key into an index using a hash function. Here's how it operates:\n\n1. **Hash Function**: Takes a key and converts it to an array index\n2. **Collision Handling**: Deals with multiple keys mapping to the same index\n3. **Operations**: O(1) average time complexity for insert, delete, and lookup operations",
           "code": "class HashTable {\n  constructor() {\n    this.table = new Array(127);\n    this.size = 0;\n  }\n  \n  _hash(key) {\n    let hash = 0;\n    for (let i = 0; i < key.length; i++) {\n      hash += key.charCodeAt(i);\n    }\n    return hash % this.table.length;\n  }\n  \n  set(key, value) {\n    const index = this._hash(key);\n    this.table[index] = [key, value];\n    this.size++;\n  }\n  \n  get(key) {\n    const index = this._hash(key);\n    return this.table[index];\n  }\n}"
         }
-      ],
-      "interviewDate": null
+      ]
     },
     {
       "id": 2,
-      "name": "CoForge",
-      "icon": "CF",
+      "name": "Stripe",
+      "icon": "💳",
       "gradient": "linear-gradient(135deg, #635BFF 0%, #4F46E5 100%)",
       "rounds": 5,
-      "updated": "Just now",
+      "updated": "17 days ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 3,
-      "name": "Cognizant",
-      "icon": "CZ",
+      "name": "Microsoft",
+      "icon": "🪟",
       "gradient": "linear-gradient(135deg, #00A4EF 0%, #0078D4 100%)",
       "rounds": 5,
-      "updated": "Just now",
+      "updated": "17 days ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 4,
-      "name": "EY",
-      "icon": "EY",
+      "name": "Netflix",
+      "icon": "🎬",
       "gradient": "linear-gradient(135deg, #E50914 0%, #B20710 100%)",
       "rounds": 5,
-      "updated": "Just now",
+      "updated": "17 days ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 5,
-      "name": "Accenture",
-      "icon": "AC",
+      "name": "Startup",
+      "icon": "🚀",
       "gradient": "linear-gradient(135deg, #10B981 0%, #059669 100%)",
       "rounds": 2,
-      "updated": "Just now",
+      "updated": "23 mins ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 6,
-      "name": "UST Global",
-      "icon": "UG",
+      "name": "Startups",
+      "icon": "🌟",
       "gradient": "linear-gradient(135deg, #F59E0B 0%, #D97706 100%)",
       "rounds": 3,
-      "updated": "Just now",
+      "updated": "17 days ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 7,
-      "name": "Wipro",
-      "icon": "WP",
+      "name": "Mimidin",
+      "icon": "🎯",
       "gradient": "linear-gradient(135deg, #8B5CF6 0%, #7C3AED 100%)",
       "rounds": 2,
-      "updated": "Just now",
+      "updated": "17 hours ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 8,
-      "name": "CGI",
-      "icon": "CG",
+      "name": "Framework",
+      "icon": "⚡",
       "gradient": "linear-gradient(135deg, #F97316 0%, #EA580C 100%)",
       "rounds": 5,
-      "updated": "Just now",
+      "updated": "15 minutes ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     },
     {
       "id": 9,
-      "name": "Infosys",
-      "icon": "IN",
+      "name": "Virat",
+      "icon": "🏏",
       "gradient": "linear-gradient(135deg, #EC4899 0%, #DB2777 100%)",
       "rounds": 3,
-      "updated": "Just now",
+      "updated": "4 days ago",
       "notes": [],
-      "questions": [],
-      "interviewDate": null
+      "questions": []
     }
   ],
   "resources": [],
@@ -145,85 +136,6 @@
     "topics": {}
   },
   "notebooks": [],
-  "checklist": [
-    {
-      "id": 1,
-      "text": "Research the company, products and recent news",
-      "done": false,
-      "cat": "Prep"
-    },
-    {
-      "id": 2,
-      "text": "Review JD and map your experience to requirements",
-      "done": false,
-      "cat": "Prep"
-    },
-    {
-      "id": 3,
-      "text": "Prepare STAR stories for behavioral questions",
-      "done": false,
-      "cat": "Prep"
-    },
-    {
-      "id": 4,
-      "text": "Prepare 2-min self introduction",
-      "done": false,
-      "cat": "Prep"
-    },
-    {
-      "id": 5,
-      "text": "Prepare questions to ask the interviewer",
-      "done": false,
-      "cat": "Prep"
-    },
-    {
-      "id": 6,
-      "text": "Revise SQL: joins, window functions, aggregates, subqueries",
-      "done": false,
-      "cat": "Technical"
-    },
-    {
-      "id": 7,
-      "text": "Revise ETL concepts, transformations, and tools",
-      "done": false,
-      "cat": "Technical"
-    },
-    {
-      "id": 8,
-      "text": "Practice Data Warehouse / DWH concepts and schema types",
-      "done": false,
-      "cat": "Technical"
-    },
-    {
-      "id": 9,
-      "text": "Review your project architecture and challenges faced",
-      "done": false,
-      "cat": "Technical"
-    },
-    {
-      "id": 10,
-      "text": "Practice explaining SCD Type 2",
-      "done": false,
-      "cat": "Technical"
-    },
-    {
-      "id": 11,
-      "text": "Test your camera, mic, internet connection",
-      "done": false,
-      "cat": "Logistics"
-    },
-    {
-      "id": 12,
-      "text": "Get a good night's sleep before interview",
-      "done": false,
-      "cat": "Logistics"
-    },
-    {
-      "id": 13,
-      "text": "Keep resume and portfolio link ready",
-      "done": false,
-      "cat": "Logistics"
-    }
-  ],
+  "checklist": [],
   "flashcards": []
 }
