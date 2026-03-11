@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:49:14.588Z",
+  "lastUpdated": "2026-03-11T07:49:30.515Z",
   "companies": [
     {
       "id": 1,
@@ -171,6 +171,12 @@
     {
       "id": 6,
       "text": "Revise SQL: joins, window functions, aggregates, subqueries",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 7,
+      "text": "Revise ETL concepts, transformations, and tools",
       "done": false,
       "cat": "Technical"
     }
