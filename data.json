@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:49:56.514Z",
+  "lastUpdated": "2026-03-11T07:50:10.508Z",
   "companies": [
     {
       "id": 1,
@@ -189,6 +189,12 @@
     {
       "id": 9,
       "text": "Review your project architecture and challenges faced",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 10,
+      "text": "Practice explaining SCD Type 2",
       "done": false,
       "cat": "Technical"
     }
