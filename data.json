@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T07:51:07.584Z",
+  "lastUpdated": "2026-03-11T14:50:44.773Z",
   "companies": [
     {
       "id": 1,
@@ -136,45 +136,218 @@
     "content": {},
     "topics": {}
   },
- "notebooks": [
-    { "id": 1,  "title": "Python Basics", "url": "https://colab.research.google.com/drive/1_UAr3eLjGwA2_zAFOplCnJrr84qL_MoM", "tag": "Python",  "icon": "🐍" },
-    { "id": 2,  "title": "Pandas",        "url": "notebooks/pandas.ipynb",        "tag": "Python",  "icon": "🐼" },
-    { "id": 3,  "title": "NumPy",         "url": "notebooks/numpy.ipynb",         "tag": "Python",  "icon": "🔢" },
-    { "id": 4,  "title": "PySpark",       "url": "notebooks/pyspark.ipynb",       "tag": "PySpark", "icon": "⚡" },
-    { "id": 5,  "title": "SQL Practice",  "url": "notebooks/sql.ipynb",           "tag": "SQL",     "icon": "🗄️" },
-    { "id": 6,  "title": "ETL Pipeline",  "url": "notebooks/etl_pipeline.ipynb",  "tag": "ETL",     "icon": "🔄" },
-    { "id": 7,  "title": "AWS Glue",      "url": "notebooks/aws_glue.ipynb",      "tag": "AWS",     "icon": "☁️" },
-    { "id": 8,  "title": "Airflow",       "url": "notebooks/airflow.ipynb",       "tag": "ETL",     "icon": "💨" },
-    { "id": 9,  "title": "Data Modeling", "url": "notebooks/data_modeling.ipynb", "tag": "DWH",     "icon": "📐" },
-    { "id": 10, "title": "System Design", "url": "notebooks/system_design.ipynb", "tag": "Design",  "icon": "🏗️" }
+  "notebooks": [
+    {
+      "id": 1,
+      "title": "Python Basics",
+      "url": "https://colab.research.google.com/drive/1_UAr3eLjGwA2_zAFOplCnJrr84qL_MoM",
+      "tag": "Python",
+      "icon": "🐍"
+    },
+    {
+      "id": 2,
+      "title": "Pandas",
+      "url": "notebooks/pandas.ipynb",
+      "tag": "Python",
+      "icon": "🐼"
+    },
+    {
+      "id": 3,
+      "title": "NumPy",
+      "url": "notebooks/numpy.ipynb",
+      "tag": "Python",
+      "icon": "🔢"
+    },
+    {
+      "id": 4,
+      "title": "PySpark",
+      "url": "notebooks/pyspark.ipynb",
+      "tag": "PySpark",
+      "icon": "⚡"
+    },
+    {
+      "id": 5,
+      "title": "SQL Practice",
+      "url": "notebooks/sql.ipynb",
+      "tag": "SQL",
+      "icon": "🗄️"
+    },
+    {
+      "id": 6,
+      "title": "ETL Pipeline",
+      "url": "notebooks/etl_pipeline.ipynb",
+      "tag": "ETL",
+      "icon": "🔄"
+    },
+    {
+      "id": 7,
+      "title": "AWS Glue",
+      "url": "notebooks/aws_glue.ipynb",
+      "tag": "AWS",
+      "icon": "☁️"
+    },
+    {
+      "id": 8,
+      "title": "Airflow",
+      "url": "notebooks/airflow.ipynb",
+      "tag": "ETL",
+      "icon": "💨"
+    },
+    {
+      "id": 9,
+      "title": "Data Modeling",
+      "url": "notebooks/data_modeling.ipynb",
+      "tag": "DWH",
+      "icon": "📐"
+    },
+    {
+      "id": 10,
+      "title": "System Design",
+      "url": "notebooks/system_design.ipynb",
+      "tag": "Design",
+      "icon": "🏗️"
+    }
   ],
   "checklist": [
-    { "id": 1,  "text": "Research the company, products and recent news",            "done": false, "cat": "Prep"      },
-    { "id": 2,  "text": "Review JD and map your experience to requirements",         "done": false, "cat": "Prep"      },
-    { "id": 3,  "text": "Prepare STAR stories for behavioral questions",             "done": false, "cat": "Prep"      },
-    { "id": 4,  "text": "Prepare 2-min self introduction",                          "done": false, "cat": "Prep"      },
-    { "id": 5,  "text": "Prepare questions to ask the interviewer",                 "done": false, "cat": "Prep"      },
-    { "id": 6,  "text": "Revise SQL: joins, window functions, aggregates, subqueries","done": false, "cat": "Technical" },
-    { "id": 7,  "text": "Revise ETL concepts, transformations, and tools",          "done": false, "cat": "Technical" },
-    { "id": 8,  "text": "Practice Data Warehouse / DWH concepts and schema types",  "done": false, "cat": "Technical" },
-    { "id": 9,  "text": "Review your project architecture and challenges afaced",     "done": false, "cat": "Technical" },
-    { "id": 10, "text": "Practice explaining SCD Type 2",                           "done": false, "cat": "Technical" },
-    { "id": 11, "text": "Test your camera, mic, internet connection",               "done": false, "cat": "Logistics" },
-    { "id": 12, "text": "Get a good night's sleep before interview",                "done": false, "cat": "Logistics" },
-    { "id": 13, "text": "Keep resume and portfolio link ready",                     "done": false, "cat": "Logistics" }
+    {
+      "id": 1,
+      "text": "Research the company, products and recent news",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 2,
+      "text": "Review JD and map your experience to requirements",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 3,
+      "text": "Prepare STAR stories for behavioral questions",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 4,
+      "text": "Prepare 2-min self introduction",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 5,
+      "text": "Prepare questions to ask the interviewer",
+      "done": false,
+      "cat": "Prep"
+    },
+    {
+      "id": 6,
+      "text": "Revise SQL: joins, window functions, aggregates, subqueries",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 7,
+      "text": "Revise ETL concepts, transformations, and tools",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 8,
+      "text": "Practice Data Warehouse / DWH concepts and schema types",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 9,
+      "text": "Review your project architecture and challenges afaced",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 10,
+      "text": "Practice explaining SCD Type 2",
+      "done": false,
+      "cat": "Technical"
+    },
+    {
+      "id": 11,
+      "text": "Test your camera, mic, internet connection",
+      "done": false,
+      "cat": "Logistics"
+    },
+    {
+      "id": 12,
+      "text": "Get a good night's sleep before interview",
+      "done": false,
+      "cat": "Logistics"
+    },
+    {
+      "id": 13,
+      "text": "Keep resume and portfolio link ready",
+      "done": false,
+      "cat": "Logistics"
+    }
   ],
   "flashcards": [
-    { "id": 1,  "q": "What is SCD Type 2?",                               "a": "Tracks historical changes by inserting new rows with effective/expiry dates and a current_flag, preserving full history of dimension changes." },
-    { "id": 2,  "q": "RANK() vs DENSE_RANK()?",                           "a": "RANK() leaves gaps after ties (1,2,2,4). DENSE_RANK() does not leave gaps (1,2,2,3). ROW_NUMBER() is always unique." },
-    { "id": 3,  "q": "What is a Fact table?",                             "a": "Stores quantitative measures/metrics (e.g. sales amount, quantity). References dimension tables via foreign keys. Can be additive, semi-additive, or non-additive." },
-    { "id": 4,  "q": "Star Schema vs Snowflake Schema?",                  "a": "Star: one fact + denormalized dimension tables — fast queries, simple joins. Snowflake: normalized dimensions — saves storage, more complex joins." },
-    { "id": 5,  "q": "What is ETL?",                                      "a": "Extract (pull data from sources), Transform (clean, validate, aggregate, apply business rules), Load (write into data warehouse). ELT loads first, then transforms inside the warehouse." },
-    { "id": 6,  "q": "What is a Surrogate Key?",                          "a": "An artificial primary key (usually auto-incremented integer) assigned independently of business/natural keys. Used in DWH to handle SCD and source-system changes." },
-    { "id": 7,  "q": "UNION vs UNION ALL?",                               "a": "UNION removes duplicates and sorts the result (slower). UNION ALL keeps all rows including duplicates (faster). Always prefer UNION ALL when duplicates are not a concern." },
-    { "id": 8,  "q": "What is a Window Function?",                        "a": "Performs calculation across a related set of rows without collapsing them. Syntax: FUNCTION() OVER (PARTITION BY col ORDER BY col ROWS/RANGE ...). Examples: ROW_NUMBER, RANK, SUM, LAG, LEAD." },
-    { "id": 9,  "q": "Active vs Passive Transformation (Informatica)?",   "a": "Active: changes number of rows (Filter, Aggregator, Router, Joiner, Sorter, Normalizer). Passive: does not change row count (Expression, Lookup, Sequence Generator, Update Strategy)." },
-    { "id": 10, "q": "What is Normalization?",                            "a": "Organizing DB to reduce redundancy. 1NF: atomic values, no repeating groups. 2NF: no partial dependency. 3NF: no transitive dependency. BCNF: every determinant is a candidate key." },
-    { "id": 11, "q": "What are the types of Slowly Changing Dimensions?", "a": "SCD0: no change. SCD1: overwrite old value. SCD2: add new row with date range. SCD3: add new column for old value. SCD4: use mini-dimension. SCD6: hybrid of 1+2+3." },
-    { "id": 12, "q": "What is Data Completeness Testing in ETL?",         "a": "Verifying that all expected records from source arrived in target. Includes record count checks, null checks, duplicate checks, and boundary value validation." }
+    {
+      "id": 1,
+      "q": "What is SCD Type 2?",
+      "a": "Tracks historical changes by inserting new rows with effective/expiry dates and a current_flag, preserving full history of dimension changes."
+    },
+    {
+      "id": 2,
+      "q": "RANK() vs DENSE_RANK()?",
+      "a": "RANK() leaves gaps after ties (1,2,2,4). DENSE_RANK() does not leave gaps (1,2,2,3). ROW_NUMBER() is always unique."
+    },
+    {
+      "id": 3,
+      "q": "What is a Fact table?",
+      "a": "Stores quantitative measures/metrics (e.g. sales amount, quantity). References dimension tables via foreign keys. Can be additive, semi-additive, or non-additive."
+    },
+    {
+      "id": 4,
+      "q": "Star Schema vs Snowflake Schema?",
+      "a": "Star: one fact + denormalized dimension tables — fast queries, simple joins. Snowflake: normalized dimensions — saves storage, more complex joins."
+    },
+    {
+      "id": 5,
+      "q": "What is ETL?",
+      "a": "Extract (pull data from sources), Transform (clean, validate, aggregate, apply business rules), Load (write into data warehouse). ELT loads first, then transforms inside the warehouse."
+    },
+    {
+      "id": 6,
+      "q": "What is a Surrogate Key?",
+      "a": "An artificial primary key (usually auto-incremented integer) assigned independently of business/natural keys. Used in DWH to handle SCD and source-system changes."
+    },
+    {
+      "id": 7,
+      "q": "UNION vs UNION ALL?",
+      "a": "UNION removes duplicates and sorts the result (slower). UNION ALL keeps all rows including duplicates (faster). Always prefer UNION ALL when duplicates are not a concern."
+    },
+    {
+      "id": 8,
+      "q": "What is a Window Function?",
+      "a": "Performs calculation across a related set of rows without collapsing them. Syntax: FUNCTION() OVER (PARTITION BY col ORDER BY col ROWS/RANGE ...). Examples: ROW_NUMBER, RANK, SUM, LAG, LEAD."
+    },
+    {
+      "id": 9,
+      "q": "Active vs Passive Transformation (Informatica)?",
+      "a": "Active: changes number of rows (Filter, Aggregator, Router, Joiner, Sorter, Normalizer). Passive: does not change row count (Expression, Lookup, Sequence Generator, Update Strategy)."
+    },
+    {
+      "id": 10,
+      "q": "What is Normalization?",
+      "a": "Organizing DB to reduce redundancy. 1NF: atomic values, no repeating groups. 2NF: no partial dependency. 3NF: no transitive dependency. BCNF: every determinant is a candidate key."
+    },
+    {
+      "id": 11,
+      "q": "What are the types of Slowly Changing Dimensions?",
+      "a": "SCD0: no change. SCD1: overwrite old value. SCD2: add new row with date range. SCD3: add new column for old value. SCD4: use mini-dimension. SCD6: hybrid of 1+2+3."
+    },
+    {
+      "id": 12,
+      "q": "What is Data Completeness Testing in ETL?",
+      "a": "Verifying that all expected records from source arrived in target. Includes record count checks, null checks, duplicate checks, and boundary value validation."
+    }
   ]
 }
