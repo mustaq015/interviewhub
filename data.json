@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T14:51:39.211Z",
+  "lastUpdated": "2026-03-11T15:10:38.069Z",
   "companies": [
     {
       "id": 1,
@@ -114,7 +114,16 @@
       "questions": []
     }
   ],
-  "resources": [],
+  "resources": [
+    {
+      "id": 1,
+      "title": "Golden Interview Questionaire",
+      "category": "OTHER",
+      "url": "./files/Golden Questionnaire with Interview Qs-1-76.md",
+      "important": false,
+      "added": "3/11/2026"
+    }
+  ],
   "globalNotes": {
     "categories": [
       {
