@@ -1,6 +1,6 @@
 {
   "version": "2.0",
-  "lastUpdated": "2026-03-11T16:48:31.069Z",
+  "lastUpdated": "2026-03-11T16:53:10.932Z",
   "companies": [
     {
       "id": 1,
@@ -121,34 +121,6 @@
       "updated": "4 days ago",
       "notes": [],
       "questions": []
-    },
-    {
-      "id": 10,
-      "name": "[05-10-2025 08:50] Somali: Shadrach [10:00-11:00]",
-      "icon": "SO",
-      "gradient": "linear-gradient(135deg, #635BFF 0%, #4F46E5 100%)",
-      "rounds": 4,
-      "interviewDate": null,
-      "updated": "Just now",
-      "notes": [],
-      "questions": [
-        {
-          "id": 1,
-          "title": "1. What is a Composite Key?",
-          "round": "Technical (Alg/DS)",
-          "tags": [],
-          "answer": "",
-          "code": ""
-        },
-        {
-          "id": 2,
-          "title": "what is etl",
-          "round": "Technical (Alg/DS)",
-          "tags": [],
-          "answer": "",
-          "code": ""
-        }
-      ]
     }
   ],
   "resources": [
